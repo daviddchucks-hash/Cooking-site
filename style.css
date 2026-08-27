@@ -63,11 +63,10 @@ header{
 
     border-bottom:1px solid rgba(255,255,255,0.1);
 
-    box-shadow:
-    0 8px 32px rgba(0,255,255,.15);
+    
 }
 
-/* ===== GLOWING TITLE ===== */
+/* ===== GLOWING TITLE ===== 
 header h1{
     font-size:3rem;
     font-weight:800;
@@ -80,24 +79,7 @@ header h1{
         #ff00ff
     );
 
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
-
-    text-shadow:
-    0 0 10px #00ffff,
-    0 0 20px #00ffff,
-    0 0 40px #00ffff;
-
     animation:glow 3s infinite alternate;
-}
-
-@keyframes glow{
-    from{
-        filter:brightness(1);
-    }
-    to{
-        filter:brightness(1.4);
-    }
 }
 
 /* ===== NAVIGATION ===== */
@@ -131,16 +113,6 @@ nav ul li a{
 
 nav ul li a:hover{
     transform:translateY(-4px);
-
-    background:linear-gradient(
-        45deg,
-        #00ffff,
-        #ff00ff
-    );
-
-    box-shadow:
-    0 0 20px #00ffff,
-    0 0 40px #ff00ff;
 }
 
 /* ===== MAIN CONTENT ===== */
@@ -170,23 +142,12 @@ section{
 section:hover{
     transform:translateY(-8px);
 
-    box-shadow:
-    0 15px 40px rgba(0,255,255,.15);
 }
 
 /* ===== SECTION TITLES ===== */
 section h2{
     font-size:2rem;
     margin-bottom:15px;
-
-    background:linear-gradient(
-        90deg,
-        #00ffff,
-        #ff00ff
-    );
-
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
 }
 
 /* ===== PARAGRAPHS ===== */
@@ -228,8 +189,6 @@ form input:focus,
 form textarea:focus{
     border-color:#00ffff;
 
-    box-shadow:
-    0 0 20px rgba(0,255,255,.4);
 }
 
 /* ===== BUTTON ===== */
@@ -257,10 +216,6 @@ form button{
 
 form button:hover{
     transform:translateY(-4px);
-
-    box-shadow:
-    0 0 25px #00ffff,
-    0 0 50px #ff00ff;
 }
 
 /* ===== FOOTER ===== */
